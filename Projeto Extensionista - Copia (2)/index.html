@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&R Silagens</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=”script.js”></script>
+</head>
+<body>
+    <div class="corpo">
+      <!-- Botão Login e logo--> 
+    <h1>Seu Parceiro de Confiança</h1> <!-- Titulo -->
+    <h3>Preencha o fomrulario para continuar:</h3> <!-- Subtitulo -->
+        <input type="email" placeholder="Digite seu email:"><br>  <!-- Botão Email-->
+        <br>
+        <input type="password" placeholder="Digite sua senha:"><br> <!-- Botão Senha-->
+    <button type="button" name="cadastrar">Cadastar</button><br> <!-- Botão Cadastrar-->
+    <button type="button" name="login">Login</button> <!-- Botão Login-->
+    <img src="logo_preta.png" alt="Logo D&R Silagens" class="logo"> <!-- Logo D&R Silagens-->
+    </div>
+    <!-- Fim Login e logo--> 
+<!--Menu Interativo-->  
+<div class="menuInicial"> 
+<input type="image" src="botao_menu.png" onclick="mostrarOuEsconder()" name="botaoMenu"></div> <!-- Botão Menu-->
+<div id="menuHamburguer" menu="menuHamburguer" hidden> <!-- Menu Hamburguer-->
+  <a href="Aba-Serviços">Serviços</a><br> <!-- Aba serviços-->
+  <a href="Aba-Contatos">Contatos</a><br> <!-- Aba contatos-->
+  <a href="Aba-Sobre-Nós">Sobre Nós</a><br> <!-- Aba sobre nós-->
+  <a href="Aba-Informações">Informações</a><br> <!-- Aba informações-->
+</div>
+<script> // Função para mostrar ou esconder o menu hamburguer
+  function mostrarOuEsconder() {
+    const elemento = document.getElementById("menuHamburguer");
+    elemento.hidden = !elemento.hidden;
+  }
+</script>
+            </div>
+<!-- Fim Menu Interativo-->                
+
+            </div>
+</body>
+<footer>
+  
+
+</footer>
+</html>
