@@ -1,0 +1,22 @@
+html {
+    background-color: #414141; /* Cor de fundo padrão */
+}
+header {
+    background-color: black; /* Cor de fundo padrão */
+    color: white; /* Cor do texto padrão */
+    padding: 10px; /* Preenchimento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    
+}
+a {
+    color: #fff; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-family: 'Kanit Regular', sans-serif; /* Aplica a fonte Kanit regular */
+    padding: 20px;
+    font-size: 15px; /* Tamanho da fonte padrão */
+}
+img[name="logoColorida"] {
+    width: 90px;
+    position: relative;
+    transform: translateX(-400%); /* Move o logo para a esquerda */
+}
