@@ -130,3 +130,7 @@ color: #815EBA;
   transform: scale(0.98); /* Efeito de clique */
   transition: transform 0.1s ease; /* Transição suave para o efeito de clique */
 }
+
+a{
+  text-decoration: none;
+}

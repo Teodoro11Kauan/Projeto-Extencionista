@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>D&R Silagens</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=menu" />
+    <script src=”/JS/script.js” defer></script>
+</head>
+<body>
+
+      <div id="menuHamburguer" menu="menuHamburguer"> <!-- Menu Hamburguer-->
+     <span class="material-symbols-outlined">
+      menu
+    </span>
+</div>
+<nav class="links">
+  <a href="/HTML/Aba-Serviços.html">Serviços</a>
+  <a href="/HTML/Aba-Contatos.html">Contatos</a>
+  <a href="/HTML/Aba-Sobre-Nós.html">Sobre Nós</a>
+  <a href="/HTML/Aba-Informações.html">Informações</a>
+</nav>
+  
+    <h1>Seu Parceiro de Confiança</h1> <!-- Titulo -->
+    <h3>Preencha o fomrulario para continuar:</h3> <!-- Subtitulo -->
+        <input type="email" placeholder="Digite seu email:"><br>  <!-- Botão Email-->
+        <br>
+        <input type="password" placeholder="Digite sua senha:"><br> <!-- Botão Senha-->
+    <button type="button" name="cadastrar">Cadastar</button><br> <!-- Botão Cadastrar-->
+    <button type="button" name="login">Login</button> <!-- Botão Login-->
+    <img src="/Icons/logo_preta.png" alt="Logo D&R Silagens" class="logo"> <!-- Logo D&R Silagens-->
+   
+  </div>            
+</div>
+           
+               <script>
+    var menuHamburguer = document.getElementById('menuHamburguer');
+    var links = document.querySelector('.links');
+    menuHamburguer.addEventListener('click', function() {
+    if (links.style.display === 'flex') {
+        links.style.display = 'none';
+        links.style.transition = 'width 0.5s';
+    } else {
+        links.style.display = 'flex';
+        links.style.transition = 'width 0.5s';
+    }
+    });
+               </script> 
+
+</body>
+</html>
