@@ -26,7 +26,6 @@ body {
     color: #000000; /* Cor do texto padrão */
     text-align: center; /* Centraliza o texto */    
     font-family: 'Kanit SemiBold', sans-serif; /* Aplica a fonte Kanit SemiBold */
-    min-height: none; /* Altura mínima da tela */
     background-attachment: local;
     overflow-y: scroll;
     background-image: url('/Imagens/fundo_login.jpg'); /* Caminho da imagem */
@@ -64,6 +63,15 @@ body {
     background-color: #333;
     user-select: none;
 }
+
+@keyframes abrirLinks {
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+
 .links {
     width: 150px;
     height: 100vh;
@@ -76,8 +84,9 @@ body {
     align-items: flex-start;
     flex-direction: column;
     display: none; /* Exibe os links em coluna */
-justify-content: center;
-transition: display 0.3s ease;
+    justify-content: center;
+    transform: translateX(-100%); /* Move a barra para fora da tela */
+    animation: abrirLinks 0.3s forwards; /* Animação para abrir os links */
 
 }
 a {
