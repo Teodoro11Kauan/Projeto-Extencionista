@@ -1,240 +1,169 @@
-
-
-@font-face {
-    font-family: 'Kanit SemiBold';
-    src: url('/Fontes/Kanit-SemiBold.ttf') format('truetype');/* Fonte SemiBold */
-}
-@font-face {
-    font-family: 'Kanit Bold';
-    src: url('/Fontes/Kanit-Bold.ttf') format('truetype'); /* Fonte Bold */
-}
-@font-face {
-    font-family: 'Kanit Light';
-    src: url('/Fontes/Kanit-Light.ttf') format('truetype'); /* Fonte Light */
-}
-@font-face {
-    font-family: 'Kanit Medium';
-    src: url('/Fontes/Kanit-Medium.ttf') format('truetype'); /* Fonte Medium */
-}
 @font-face {
     font-family: 'Kanit Regular';
     src: url('/Fontes/Kanit-Regular.ttf') format('truetype'); /* Fonte Regular */
-}
-body {
-    margin: 0; /* Remove margens padrão do body */
-    padding: 0; /* Remove preenchimento padrão do body */
-    color: #000000; /* Cor do texto padrão */
-    text-align: center; /* Centraliza o texto */    
-    font-family: 'Kanit SemiBold', sans-serif; /* Aplica a fonte Kanit SemiBold */
-    background-attachment: local;
-    overflow-y: scroll;
-    background-image: url('/Imagens/fundo_login.jpg'); /* Caminho da imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat; /* Evita repetição */
-    background-position: center center; /* Centraliza a imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+
+  }
+  body {
+    font-family: 'Kanit Regular', sans-serif; 
     background-color: #414141; /* Cor de fundo padrão */
-    padding: 90px; /* Espaçamento interno */
-    margin: auto; /* Centraliza o elemento */
-    font-family: 'Kanit SemiBold', sans-serif; /* Aplica a fonte Kanit SemiBold */
-    background-color:#414141; /* Cor de fundo padrão */
-    min-height: none; /* Altura mínima da tela */
-    background-attachment: local;
- 
-}
-.material-symbols-outlined{
-    font-size: 70px; /* Tamanho do ícone */
-    color: #000000; /* Cor do ícone */
-    position: absolute; /* Posição absoluta para o ícone */
-    top: 0; /* Alinha o ícone ao topo */
-    left: 0; /* Alinha o ícone ao centro horizontalmente */
-    z-index: 1; /* Coloca o ícone acima de outros elementos */
-   margin: 1cm;
-   padding: 3px;
-   border-radius: 20px;
-    margin-bottom: 40px;
-    background-color: #ffffff;
-}
-.material-symbols-outlined:hover {
-    color: #815EBA; /* Cor ao passar o mouse */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
-    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
-    background-color: #333;
-    user-select: none;
-}
-
-@keyframes abrirLinks {
-    100% {
-        transform: translateX(0);
-
-    }
-}
-
-
-.links {
-    width: 150px;
-    height: 100vh;
-    background-color: #000000;
-    position: absolute; /* Fixa a barra lateral à esquerda */
-    padding: 10px;
-    top: 0px;
-    left: 0px;
-    margin: none;
-    align-items: flex-start;
-    flex-direction: column;
-    display: none; /* Exibe os links em coluna */
-    justify-content: center;
-    transform: translateX(-100%); /* Move a barra para fora da tela */
-    animation: abrirLinks 0.3s forwards; /* Animação para abrir os links */
-
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
-    display: flex; /* Exibe os links em linha */
-    gap: 20px; /* Espaçamento entre os links */
-    left: 0;
-    top: 0; /* Alinha os links ao topo */
-    margin-left: 0cm; /* Margem negativa para alinhar os links */;
-    padding: 4px;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 7px;
-   
-
-}
-a:hover {
-
-    cursor: pointer;
-    background-color: #333;
-    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
-    background-color: #333;
-}
-
-input[type="email"] {  
-    width: 350px; /* Largura do botão email */
-    padding: 5px; /* Preenchimento interno do botão email */
-    font-size: 14px; /* Tamanho da fonte do botão email */
-    border: 0px solid #aaa; /* Borda do botão email */
-    border-radius: 10px; /* Bordas arredondadas do botão email */
-    background-color: #ffffffe1; /* Cor de fundo do botão email */
-    outline: none; /* Remove o contorno padrão do botão email */
-    font-family: 'Kanit Light', sans-serif; /* Aplica a fonte Kanit Light */
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Sombra do campo de entrada */
-    transform: translateY(-100%); /* Move o botão email para cima */
-}
-
-input[type="password"] {
-    width: 350px; /* Largura do botão senha */
-    padding: 5px; /* Preenchimento interno do botão senha */
-    font-size: 14px; /* Tamanho da fonte do botão senha */
-    border: 0px solid #aaa; /* Borda do botão senha */
-    border-radius: 10px;    /* Bordas arredondadas do botão senha */
-    background-color: #ffffffe1; /* Cor de fundo do botão senha */
-    outline: none; /* Remove o contorno padrão do botão senha */
-    font-family: 'Kanit Light', sans-serif; /* Aplica a fonte Kanit Light */
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Sombra do campo de entrada */
-    transform: translateY(-150%); /* Move o botão senha para cima */
-}
-h3 {
-    transform: translateY(-100%); /* Move o título para cima */
-}
-.logo {
-    width: 70px; /* Largura do logo */
-    position: absolute; /* Posição absoluta para o logo */
-    top: 0; /* Alinha o logo ao topo */
-    left: 50%; /* Alinha o logo ao centro horizontalmente */
-    transform: translateX(-50%); /* Centraliza o logo */
-    z-index: 1; /* joga ela pro fundo */
-}
-
-button[name="login"] {
-    width: 150px; /* Largura do botão de login */
-    color: #815EBA; /* Cor do texto do botão de login */
-    padding: 5px; /* Preenchimento interno do botão de login */
-    font-size: 14px; /* Tamanho da fonte do botão de login */
-    border: 3px solid #815EBA; /* Borda do botão de login */
-    border-radius: 10px; /* Bordas arredondadas do botão de login */
-    background-color: #ffffffe1; /* Cor de fundo do botão de login */
-    outline: none; /* Remove o contorno padrão do botão de login */
-    font-family: 'Kanit Medium', sans-serif; /* Aplica a fonte Kanit Medium */
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Sombra do campo de entrada */
-    transform: translateY(-200%); /* Move o botão de login para cima */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    align-items: center; /* Alinha o conteúdo do botão ao centro */
-    transform: translateY(-50%); /* Move o botão de login para cima */
     
-}
-button[name="cadastrar"] {
-    width: 150px; /* Largura do botão de cadastrar */
-    color: #ffffff; /* Cor do texto do botão de cadastrar */
-    padding: 5px; /* Preenchimento interno do botão de cadastrar */
-    font-size: 14px; /* Tamanho da fonte do botão de cadastrar */
-    border: 3px solid #815eba; /* Borda do botão de cadastrar */
-    border-radius: 10px; /* Bordas arredondadas do botão de cadastrar */
-    background-color: #815eba; /* Cor de fundo do botão de cadastrar */
-    outline: none; /* Remove o contorno padrão do botão de cadastrar */
-    font-family: 'Kanit Medium', sans-serif; /* Aplica a fonte Kanit Medium */
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Sombra do campo de entrada */
-    transform: translateY(-200%); /* Move o botão de cadastrar para cima */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    align-items: center; /* Alinha o conteúdo do botão ao centro */
-    transform: translateY(-80%); /* Move o botão de cadastrar para cima */
-}
-
-button[name="login"]:active {
-    width: 145px; /* Dá aquele efeito de "afundar" */
-    background-color: #bda3e9; /* Cor diferente durante o clique */
   }
-  button[name="cadastrar"]:active {
-    width: 145px; /* Dá aquele efeito de "afundar" */
-    background-color: #bda3e9; /* Cor diferente durante o clique */
-  }
-
-  .container-slider {
+  .navbar {
+    background-color: black;
+    color: black;
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    padding: 15px 30px;;
+  
   }
-  .container-images{
-    position: fixed;
+  .logo {
+    width: 60px;
+    padding: 0px;
+  }
+   .logo img {
+    width: 60px;
+    height: auto;
+  }
+  .nav-links{
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
+    gap: 20px;
   }
-  .slider {
-    position: absolute;
-    width: 100%;
-
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Kanit Regular', sans-serif;
+    transition: color 0.3s; 
   }
-  #prev-button, #next-button{
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  footer {
-    position: fixed; /* Fixa o rodapé na parte inferior da tela */
-    bottom: 0; /* Alinha o rodapé ao fundo da tela */
-    left: 0; /* Alinha o rodapé à esquerda da tela */
-    width: 100%; /* Largura total do rodapé */
-    background-color: #000000; /* Cor de fundo do rodapé */
-    color: #ffffff; /* Cor do texto do rodapé */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 10px; /* Espaçamento interno do rodapé */
-    font-family: 'Kanit Light', sans-serif; /* Aplica a fonte Kanit Light ao rodapé */
-  }
-  .logo-footer {
-    width: 70px;
-    height: 70px;
-    padding: 30px;
-    position: absolute; /* Posição absoluta para o logo do rodapé */
-    left: 0;
+  .nav-links a:hover {
+    color: #815EBA; /* Cor ao passar o mouse */
   }
   
+  @media (max-width: 500px) {
+
+    
+
+    body {
+        background-image: url(/Imagens/imagem_inicial.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Kanit Regular', sans-serif;
+    }
+    
+    .logo-start {
+       width: 140px;
+       height: 140px;
+        transform: translateY(-100px);
+     
+    }
+    .resto {
+        margin: 15px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links a {
+      margin-bottom: 10px;
+    }
+
+    .startScreen {
+        border-radius: 15px;
+        background-color: rgb(214, 214, 214);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Altura total da tela */
+    transform: translateX(-6px);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        gap: 20px;
+        box-shadow: #636363 0px 0px 10px;
+        margin: 0 auto;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+             gap: 30px;
+
+    }
+    button {
+        padding: 10px 20px;
+        font-family: 'Kanit Regular', sans-serif;
+        background-color: #815EBA; /* Cor do botão */
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: #636363 0px 0px 10px;
+    }
+  }
+  body {
+    background-image: url(/Imagens/imagem_inicial.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Kanit Regular', sans-serif;
+}
+
+.logo-start {
+   width: 140px;
+   height: 140px;
+    transform: translateY(-120px);
+ 
+}
+.resto {
+    margin: 15px;
+}
+
+
+.startScreen {
+    border-radius: 15px;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da tela */
+    width: 65vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    gap: 20px;
+    box-shadow: #636363 0px 0px 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 24px;
+
+}
+button {
+    padding: 10px 20px;
+    font-family: 'Kanit Regular', sans-serif;
+    background-color: #815EBA; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: #636363 0px 0px 10px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+button:active {
+    background-color: #322648; /* Cor ao passar o mouse */
+    scale: 0.95; /* Efeito de clique */
+}
+

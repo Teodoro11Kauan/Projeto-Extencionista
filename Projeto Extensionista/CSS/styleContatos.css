@@ -25,7 +25,7 @@
     padding: 0px;
   }
    .logo img {
-    width: 100%;
+    width: 60px;
     height: auto;
   }
   .nav-links{
@@ -171,4 +171,55 @@
   .button-image:active {
     transform: scale(0.98); /* Efeito de clique */
     transition: transform 0.1s ease; /* Transição suave para o efeito de clique */
+  }
+
+.contatos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+
+  @media (max-width: 450px) {
+ 
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links a {
+      margin-bottom: 10px;
+    }
+    .image {
+      width: 100%;
+      height: auto; /* Ajusta a altura automaticamente */
+      }
+  
+
+
+
+.enderecoContatos {
+  display: none;
+
+}
+
+.contatospage {
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  column-count: 1;
+  column-width: 10000px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr
+    }
+
+    .contatos {
+      display: none;
+    }
+
+    .endereco p {
+      display: none;
+    }
+    
+    .rodape iframe {
+      transform: translateX(-20px);
+    }
   }

@@ -25,7 +25,7 @@ body {
   padding: 0px;
 }
  .logo img {
-  width: 100%;
+  width: 60px;
   height: auto;
 }
 .nav-links{
@@ -104,6 +104,8 @@ body {
 }
 .icon-rodape{
   margin: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .button-image {
@@ -134,3 +136,42 @@ color: #815EBA;
 a{
   text-decoration: none;
 }
+
+.contatos img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+@media (max-width: 450px) {
+ 
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links a {
+    margin-bottom: 10px;
+  }
+  .image {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .button-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      font-size: 14px;
+      width: 110px;
+      height: 40px;
+      border-radius: 5px;
+    }
+
+    .rodape {
+      display: none;
+    }
+
+  }

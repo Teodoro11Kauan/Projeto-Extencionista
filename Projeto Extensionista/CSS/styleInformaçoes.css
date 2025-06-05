@@ -45,40 +45,74 @@
   .nav-links a:hover {
     color: #815EBA; /* Cor ao passar o mouse */
   }
-.imagem1 img{
 
-    width: 800px;
-    height: 200px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    align-items: center;
-    display: flex;
-    margin: 20px auto; /* Centraliza horizontalmente */
-    opacity: 60%;
-    
-  }
-  .imagem2 img{
+.conteudo {
+  background-color: #515151;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+}
+.whatsapp {
+  background-color: #515151;
+  text-align: start;
+  margin: 20px;
+}
 
-    width: 800px;
-    height: 200px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    align-items: center;
-    display: flex;
-    margin: 20px auto; /* Centraliza horizontalmente */
-opacity: 60%;
+.email {
+  background-color: #515151;
+  margin: 20px;
+}
+.whatsapp button {
+  background-color: #33cf22;
+  height: 5vw;
+  width: 16vw;
+  border-style: 30px solid;
+  border-radius: 10px;
+  border-color: #ffffff;
+  text-align: center;
+  font-size: 24px;
 
-  }
-h6 {
-    font-family: 'Kanit Regular', sans-serif;
-    font-size: 13px;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    translate: 120px -160px;
-  }
+}
+.whatsapp a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit Regular', sans-serif;
+
+}
+
+.email button {
+  background-color: darkgray;
+  height: 5vw;
+  width: 16vw;
+  border-style: 30px solid;
+  border-radius: 10px;
+  border-color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+}
+.email a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Kanit Regular', sans-serif;
+}
+
+.conteudoFinal {
+  padding: 30px;
+  margin: 30px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,3 +192,43 @@ h6 {
     transform: scale(0.98); /* Efeito de clique */
     transition: transform 0.1s ease; /* Transição suave para o efeito de clique */
   }
+
+  .contatos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+
+  
+
+  @media (max-width: 450px) {
+ 
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links a {
+      margin-bottom: 10px;
+    }
+    .image {
+      width: 100%;
+      height: auto; /* Ajusta a altura automaticamente */
+      }
+
+      .rodape {
+        display: none;
+
+      }
+
+      .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      } 
+
+      .conteudo button {
+       width: 170px;
+       height: 70px;
+       font-size: 18px;
+      }
+    }
