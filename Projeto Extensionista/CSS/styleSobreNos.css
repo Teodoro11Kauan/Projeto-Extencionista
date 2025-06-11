@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Kanit Regular';
+    src: url('/Fontes/Kanit-Regular.ttf') format('truetype'); /* Fonte Regular */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Kanit Regular', sans-serif; 
+    background-color: #414141; /* Cor de fundo padrão */
+    
+  }
+
+  
+  .navbar {
+    background-color: black;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;;
+  
+  }
+  .logo {
+    width: 60px;
+    padding: 0px;
+  }
+   .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Kanit Regular', sans-serif;
+    transition: color 0.3s; 
+  }
+  .nav-links a:hover {
+    color: #815EBA; /* Cor ao passar o mouse */
+  }
+
+.Sobrenos {
+column-count: 2;
+    color: white;
+
+  
+}
+.texto1 {
+    margin: 40px;
+}
+
+.imagem1 {
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 40px;
+   padding-bottom: 40px;
+} 
+
+.imagem2 {
+    width: 350px;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 40px;
+   padding-bottom: 40px;
+}
+.texto2 {
+    margin: 40px;
+}
+
+
+  .rodape {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  
+  }
+  .logo-rodape {
+    width: 50px;
+    padding-bottom: 80px;
+    align-items: flex-start;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+  }
+  .escrito-rodape {
+    display: flex;
+    margin: 0px auto;
+    padding: 0;
+    align-items: center;
+  
+  }
+  .contatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Cor de fundo da seção de contatos */
+    color: white; /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+  
+  }
+  .endereco {
+  
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Cor de fundo da seção de endereço */
+    color: white; /* Cor do texto */
+  
+  }
+  
+  .endereco p {
+    top: 0;
+    margin-right: 30px; /* Espaçamento entre o ícone e o texto */
+  }
+  .icon-rodape{
+    margin: 30px;
+  }
+  
+  .button-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #abababe5; /* Cor de fundo do botão */
+    border-radius: 15px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    color: white;
+    width: 220px;
+    translate: 250px -120px;
+    font-family: 'Kanit Regular' ,'sans-serif';
+    font-size: 25px;
+    border: none;
+  }
+  .button-image:hover {
+  background-color: #abababe3;
+  color: #815EBA;
+  }
+  .button-image:active {
+    transform: scale(0.98); /* Efeito de clique */
+    transition: transform 0.1s ease; /* Transição suave para o efeito de clique */
+  }
+
+  .contatos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+
+
+  @media (max-width: 450px) {
+ 
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links a {
+      margin-bottom: 10px;
+    }
+    .image {
+      width: 100%;
+      height: auto; /* Ajusta a altura automaticamente */
+      }
+
+      .Sobrenos {
+        
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  column-count: 1;
+  column-width: 10000px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  transform: translateX(-30px);
+      }
+
+      .imagem1, .imagem2 {
+        width: 100%;
+        height: auto; /* Ajusta a altura automaticamente */
+        margin: 15px /* Centraliza horizontalmente */
+      }
+
+      .rodape {
+        display: none;
+      }
+    }
